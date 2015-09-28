@@ -6,10 +6,5 @@ using System.Threading.Tasks;
 
 namespace SerieDB
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
+
 }

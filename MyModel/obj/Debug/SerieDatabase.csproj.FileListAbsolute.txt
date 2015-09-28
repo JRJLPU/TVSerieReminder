@@ -1,0 +1,5 @@
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\MyModel\bin\Debug\MyModel.dll
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\MyModel\bin\Debug\MyModel.pdb
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\MyModel\obj\Debug\SerieDatabase.csprojResolveAssemblyReference.cache
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\MyModel\obj\Debug\MyModel.dll
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\MyModel\obj\Debug\MyModel.pdb
