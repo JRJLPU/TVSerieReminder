@@ -27,6 +27,14 @@ namespace SerieDatabase
                 return index;
             }
 
+            DateTime thetimeis = DateTime.Parse(DateTime.Now.ToString("HH:mm:ss"));
+            DateTime reminderStart = Convert.ToDateTime("12:00:00");
+            DateTime reminderStop = Convert.ToDateTime("12:02:00");
+            public bool Reminder()
+            {
+                return (DateTime.Now > reminderStart && DateTime.Now < reminderStop);                
+            }
+
 
         }
 }

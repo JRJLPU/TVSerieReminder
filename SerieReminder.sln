@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerieReminder", "SerieRemin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerieDatabase", "MyModel\SerieDatabase.csproj", "{D43A37DA-417E-4A82-9658-3372EAEC234F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFReminder", "WPFReminder\WPFReminder.csproj", "{C5BE49F5-10AC-40E3-80FF-2D2950B91FC7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C4D640CF-16B1-4B73-A4DC-B8E087B1A272} = {C4D640CF-16B1-4B73-A4DC-B8E087B1A272}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +26,10 @@ Global
 		{D43A37DA-417E-4A82-9658-3372EAEC234F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D43A37DA-417E-4A82-9658-3372EAEC234F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D43A37DA-417E-4A82-9658-3372EAEC234F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5BE49F5-10AC-40E3-80FF-2D2950B91FC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5BE49F5-10AC-40E3-80FF-2D2950B91FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5BE49F5-10AC-40E3-80FF-2D2950B91FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5BE49F5-10AC-40E3-80FF-2D2950B91FC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

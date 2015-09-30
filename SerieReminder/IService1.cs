@@ -18,5 +18,6 @@ namespace SerieReminder
 
         [OperationContract]
         List<SerieInfo> SearchSeries(string title);
+
     }
 }
