@@ -16,25 +16,22 @@ namespace SerieDatabase
                 _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Dead in the Water", Season = 1, AirTime = DateTime.Parse("01-10-2015") });
                 _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Phantom Traveler", Season = 1, AirTime = DateTime.Parse("02-10-2015") });
                 _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Bloody Mary", Season = 1, AirTime = DateTime.Parse("03-10-2015") });
+                _seriesList.Add(new SerieInfo { Name = "Friends", EpisodeName = "The one with Joey", Season = 1, AirTime = DateTime.Parse("06-10-2015") });
+                _seriesList.Add(new SerieInfo { Name = "Friends", EpisodeName = "The one with Ross", Season = 1, AirTime = DateTime.Parse("07-10-2015") });
             }
-            public List<SerieInfo> GetAllSeries()
+            public Dictionary<string, int> GetAllSeries()
             {
-                return _seriesList;
+                Dictionary<string, int> seriesName = new Dictionary<string, int>();
+                foreach (SerieInfo info in _seriesList)
+                {
+                    if (!seriesName.ContainsKey(info.Name)) seriesName.Add(info.Name, 0);                    
+                }
+                return seriesName;
             }
             public List<SerieInfo> SearchSeries(string title)
             {
-                var index = _seriesList.FindAll(x => x.Name == title);
-                return index;
+                var series = _seriesList.FindAll(x => x.Name == title);
+                return series;
             }
-
-            DateTime thetimeis = DateTime.Parse(DateTime.Now.ToString("HH:mm:ss"));
-            DateTime reminderStart = Convert.ToDateTime("12:00:00");
-            DateTime reminderStop = Convert.ToDateTime("12:02:00");
-            public bool Reminder()
-            {
-                return (DateTime.Now > reminderStart && DateTime.Now < reminderStop);                
-            }
-
-
         }
 }

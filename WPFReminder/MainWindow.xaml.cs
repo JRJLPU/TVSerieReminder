@@ -27,5 +27,12 @@ namespace WPFReminder
             var x = client.GetAllSeries();
             var c = x;
         }
+
+        DateTime reminderStart = Convert.ToDateTime("12:00:00");
+        DateTime reminderStop = Convert.ToDateTime("12:02:00");
+        public bool Reminder()
+        {
+            return (DateTime.Now > reminderStart && DateTime.Now < reminderStop);
+        }
     }
 }

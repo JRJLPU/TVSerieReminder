@@ -14,7 +14,7 @@ namespace SerieReminder
     {
         TVSDB tvListe = new TVSDB();
 
-        public List<SerieInfo> GetAllSeries()
+        public Dictionary<string, int> GetAllSeries()
         {
             return tvListe.GetAllSeries();
         }
