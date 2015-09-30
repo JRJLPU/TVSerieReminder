@@ -22,6 +22,10 @@ namespace SerieReminder
         {
             return tvListe.SearchSeries(title);
         }
+        public string Timer(DateTime timeToWatch)
+        {
+            return tvListe.Timer(timeToWatch);
+        }
 
     }
 }

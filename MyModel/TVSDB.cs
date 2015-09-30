@@ -12,13 +12,13 @@ namespace SerieDatabase
             public readonly List<SerieInfo> _seriesList = new List<SerieInfo>();
             public TVSDB()
             {
-                _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Pilot", Season = 1, AirTime = DateTime.Parse("29-09-2015 22:00") });
-                _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Wendigo", Season = 1, AirTime = DateTime.Parse("30-09-2015 22:00") });
-                _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Dead in the Water", Season = 1, AirTime = DateTime.Parse("01-10-2015 22:00" ) });
-                _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Phantom Traveler", Season = 1, AirTime = DateTime.Parse("02-10-2015 22:00") });
-                _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Bloody Mary", Season = 1, AirTime = DateTime.Parse("03-10-2015 22:00" ) });
-                _seriesList.Add(new SerieInfo { Name = "Friends", EpisodeName = "The one with Joey", Season = 1, AirTime = DateTime.Parse("06-10-2015 19:30") });
-                _seriesList.Add(new SerieInfo { Name = "Friends", EpisodeName = "The one with Ross", Season = 1, AirTime = DateTime.Parse("07-10-2015 19:30") });
+                _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Pilot", Season = 1, AirTime = DateTime.Parse("29-09-2016 22:00") });
+                _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Wendigo", Season = 1, AirTime = DateTime.Parse("30-09-2016 22:00") });
+                _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Dead in the Water", Season = 1, AirTime = DateTime.Parse("01-10-2016 22:00" ) });
+                _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Phantom Traveler", Season = 1, AirTime = DateTime.Parse("02-10-2016 22:00") });
+                _seriesList.Add(new SerieInfo { Name = "Supernatural", EpisodeName = "Bloody Mary", Season = 1, AirTime = DateTime.Parse("03-10-2016 22:00" ) });
+                _seriesList.Add(new SerieInfo { Name = "Friends", EpisodeName = "The one with Joey", Season = 1, AirTime = DateTime.Parse("06-10-2016 19:30") });
+                _seriesList.Add(new SerieInfo { Name = "Friends", EpisodeName = "The one with Ross", Season = 1, AirTime = DateTime.Parse("07-10-2016 19:30") });
             }
             public Dictionary<string, int> GetAllSeries()
             {
@@ -37,8 +37,8 @@ namespace SerieDatabase
 
             public string Timer(DateTime timeToWatch)
             {
-                timeToWatch = _seriesList[0].AirTime;
-                System.TimeSpan remaining = timeToWatch - DateTime.Now;
+                timeToWatch = _seriesList.Where<>.AirTime;
+                System.TimeSpan remaining = timeToWatch.Subtract(DateTime.Now);
                 return remaining.ToString();
 
             }
