@@ -1,0 +1,8 @@
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\SeriesReminderConsole\bin\Debug\SeriesReminderConsole.exe.config
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\SeriesReminderConsole\bin\Debug\SeriesReminderConsole.exe
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\SeriesReminderConsole\bin\Debug\SeriesReminderConsole.pdb
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\SeriesReminderConsole\obj\Debug\SeriesReminderConsole.csprojResolveAssemblyReference.cache
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\SeriesReminderConsole\obj\Debug\SeriesReminderConsole.exe
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\SeriesReminderConsole\obj\Debug\SeriesReminderConsole.pdb
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\SeriesReminderConsole\bin\Debug\MyModel.dll
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\SeriesReminderConsole\bin\Debug\MyModel.pdb
