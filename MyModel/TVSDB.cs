@@ -34,14 +34,17 @@ namespace SerieDatabase
                 var series = _seriesList.FindAll(x => x.Name == title);
                 return series;
             }
-
-            public string Timer(DateTime timeToWatch)
+            //public string Timer(DateTime timeToWatch, string s)
+            //{
+            //    timeToWatch = _seriesList.Where(p => p.EpisodeName == s).FirstOrDefault().AirTime;
+            //    System.TimeSpan remaining = timeToWatch.Subtract(DateTime.Now);
+            //    return remaining.ToString();
+            //}
+            public string Timer(DateTime timeToWatch, string episode, string serie)
             {
-                timeToWatch = _seriesList[0].AirTime;
+                timeToWatch = _seriesList.Where(p => p.Name == serie && p.EpisodeName == episode).FirstOrDefault().AirTime;
                 System.TimeSpan remaining = timeToWatch.Subtract(DateTime.Now);
                 return remaining.ToString();
-
-
             }
 
         }

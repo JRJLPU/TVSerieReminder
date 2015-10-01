@@ -20,6 +20,6 @@ namespace SerieReminder
         List<SerieInfo> SearchSeries(string title);
 
         [OperationContract]
-        string Timer(DateTime DinDato);
+        string Timer(DateTime DinDato, string episode, string serie);
     }
 }

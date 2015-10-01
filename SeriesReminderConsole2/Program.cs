@@ -23,7 +23,7 @@ namespace SeriesReminderConsole2
             string search = Console.ReadLine();
             DateTime test = new DateTime(2015, 10, 12, 22, 05, 00);
 
-            Console.WriteLine(database.Timer(test));
+            //Console.WriteLine(database.Timer(test));
              
             Console.WriteLine(database.SearchSeries(search));
 

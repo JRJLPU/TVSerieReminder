@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfReminder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="397.761" Width="704.104">
+    <Grid>
+        <Button Name="SerieKnap" Content="Klik" HorizontalAlignment="Left" Height="52" Margin="29,293,0,0" VerticalAlignment="Top" Width="142"/>
+        <ListBox Name="SerieListBox" HorizontalAlignment="Left" Height="234" Margin="29,10,0,0" VerticalAlignment="Top" Width="214"/>
+        <Button Name = "AirtimeKnap" Content="Klik" HorizontalAlignment="Left" Height="52" Margin="420,293,0,0" VerticalAlignment="Top" Width="142"/>
+        <TextBox Name="SerieNavn" HorizontalAlignment="Left" Height="23" Margin="352,265,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="EpisodeNavn" HorizontalAlignment="Left" Height="23" Margin="519,265,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Indtast Serienavn her:" HorizontalAlignment="Left" Margin="352,226,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label Content="Indtast Episodenavn her:" HorizontalAlignment="Left" Height="25" Margin="519,226,0,0" VerticalAlignment="Top" Width="149"/>
+        <TextBox Name="AirtimeResult" HorizontalAlignment="Left" Height="90" Margin="352,119,0,0" TextWrapping="Wrap" IsReadOnly="True" VerticalAlignment="Top" Width="287"/>
+        <TextBlock HorizontalAlignment="Left" Height="104" Margin="352,10,0,0" TextWrapping="Wrap" Text="Se alle mulige serie til venstre. Derefter vælges Serienavn og Afsnit, for at se, hvornår det kommer i TV igen" VerticalAlignment="Top" Width="287"/>
+        <TextBlock HorizontalAlignment="Left" Height="39" Margin="29,249,0,0" TextWrapping="Wrap" Text="Find alle serier ved at klikke her:" VerticalAlignment="Top" Width="142"/>
+
+    </Grid>
+</Window>
