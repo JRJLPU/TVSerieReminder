@@ -23,8 +23,14 @@ namespace WpfReminder
         public MainWindow()
         {
             InitializeComponent();
-            WpfReference.Service1Client client = new WpfReference.Service1Client();
+        }
 
+        private void SerieKnap_Click(object sender, RoutedEventArgs e)
+        {
+            WpfReference.Service1Client client = new WpfReference.Service1Client();
+            var x = client.GetAllSeries();
+            var c = x;
+            x = client.GetAllSeries(AlleSerierTB.Text);
         }
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\bin\Debug\WpfReminder.exe.config
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\bin\Debug\WpfReminder.exe
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\bin\Debug\WpfReminder.pdb
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\WpfReminder.csprojResolveAssemblyReference.cache
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\MainWindow.baml
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\MainWindow.g.cs
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\App.g.cs
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\WpfReminder_MarkupCompile.cache
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\WpfReminder.g.resources
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\WpfReminder.Properties.Resources.resources
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\WpfReminder.csproj.GenerateResource.Cache
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\WpfReminder.exe
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\WpfReminder.pdb
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\bin\Debug\MyModel.dll
+C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\bin\Debug\MyModel.pdb

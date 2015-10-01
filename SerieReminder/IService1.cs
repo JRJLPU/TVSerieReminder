@@ -14,7 +14,7 @@ namespace SerieReminder
     public interface IService1
     {
         [OperationContract]
-        Dictionary<string, int> GetAllSeries();
+        Dictionary<string, int> GetAllSeries(string test);
 
         [OperationContract]
         List<SerieInfo> SearchSeries(string title);
