@@ -41,6 +41,7 @@ namespace SerieDatabase
                 System.TimeSpan remaining = timeToWatch.Subtract(DateTime.Now);
                 return remaining.ToString();
 
+
             }
 
         }

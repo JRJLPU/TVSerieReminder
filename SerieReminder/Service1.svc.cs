@@ -24,7 +24,7 @@ namespace SerieReminder
         }
         public string Timer(DateTime timeToWatch)
         {
-            return tvListe.Timer(timeToWatch);
+            return tvListe.SearchSeries(timeToWatch).Sort;
         }
 
     }
