@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WPFReminder.WPFReference {
+namespace SeriesReminderConsole2.ServiceReference1 {
     using System.Runtime.Serialization;
     using System;
     
@@ -107,29 +107,35 @@ namespace WPFReminder.WPFReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WPFReference.IService1")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
     public interface IService1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllSeries", ReplyAction="http://tempuri.org/IService1/GetAllSeriesResponse")]
-        WPFReminder.WPFReference.SerieInfo[] GetAllSeries();
+        System.Collections.Generic.Dictionary<string, int> GetAllSeries();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetAllSeries", ReplyAction="http://tempuri.org/IService1/GetAllSeriesResponse")]
-        System.Threading.Tasks.Task<WPFReminder.WPFReference.SerieInfo[]> GetAllSeriesAsync();
+        System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, int>> GetAllSeriesAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchSeries", ReplyAction="http://tempuri.org/IService1/SearchSeriesResponse")]
-        WPFReminder.WPFReference.SerieInfo[] SearchSeries(string title);
+        SeriesReminderConsole2.ServiceReference1.SerieInfo[] SearchSeries(string title);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchSeries", ReplyAction="http://tempuri.org/IService1/SearchSeriesResponse")]
-        System.Threading.Tasks.Task<WPFReminder.WPFReference.SerieInfo[]> SearchSeriesAsync(string title);
+        System.Threading.Tasks.Task<SeriesReminderConsole2.ServiceReference1.SerieInfo[]> SearchSeriesAsync(string title);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Timer", ReplyAction="http://tempuri.org/IService1/TimerResponse")]
+        string Timer(System.DateTime DinDato);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Timer", ReplyAction="http://tempuri.org/IService1/TimerResponse")]
+        System.Threading.Tasks.Task<string> TimerAsync(System.DateTime DinDato);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : WPFReminder.WPFReference.IService1, System.ServiceModel.IClientChannel {
+    public interface IService1Channel : SeriesReminderConsole2.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<WPFReminder.WPFReference.IService1>, WPFReminder.WPFReference.IService1 {
+    public partial class Service1Client : System.ServiceModel.ClientBase<SeriesReminderConsole2.ServiceReference1.IService1>, SeriesReminderConsole2.ServiceReference1.IService1 {
         
         public Service1Client() {
         }
@@ -150,20 +156,28 @@ namespace WPFReminder.WPFReference {
                 base(binding, remoteAddress) {
         }
         
-        public WPFReminder.WPFReference.SerieInfo[] GetAllSeries() {
+        public System.Collections.Generic.Dictionary<string, int> GetAllSeries() {
             return base.Channel.GetAllSeries();
         }
         
-        public System.Threading.Tasks.Task<WPFReminder.WPFReference.SerieInfo[]> GetAllSeriesAsync() {
+        public System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, int>> GetAllSeriesAsync() {
             return base.Channel.GetAllSeriesAsync();
         }
         
-        public WPFReminder.WPFReference.SerieInfo[] SearchSeries(string title) {
+        public SeriesReminderConsole2.ServiceReference1.SerieInfo[] SearchSeries(string title) {
             return base.Channel.SearchSeries(title);
         }
         
-        public System.Threading.Tasks.Task<WPFReminder.WPFReference.SerieInfo[]> SearchSeriesAsync(string title) {
+        public System.Threading.Tasks.Task<SeriesReminderConsole2.ServiceReference1.SerieInfo[]> SearchSeriesAsync(string title) {
             return base.Channel.SearchSeriesAsync(title);
+        }
+        
+        public string Timer(System.DateTime DinDato) {
+            return base.Channel.Timer(DinDato);
+        }
+        
+        public System.Threading.Tasks.Task<string> TimerAsync(System.DateTime DinDato) {
+            return base.Channel.TimerAsync(DinDato);
         }
     }
 }

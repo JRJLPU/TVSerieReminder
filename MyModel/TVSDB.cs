@@ -37,7 +37,7 @@ namespace SerieDatabase
 
             public string Timer(DateTime timeToWatch)
             {
-                timeToWatch = _seriesList.Find(c => c.AirTime.Add(timeToWatch));
+                timeToWatch = _seriesList[0].AirTime;
                 System.TimeSpan remaining = timeToWatch.Subtract(DateTime.Now);
                 return remaining.ToString();
 
