@@ -11,5 +11,4 @@ C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\WpfReminde
 C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\WpfReminder.csproj.GenerateResource.Cache
 C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\WpfReminder.exe
 C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\obj\Debug\WpfReminder.pdb
-C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\bin\Debug\MyModel.dll
 C:\Users\Jacob\Documents\GitHub\TVSerieReminder\WpfReminder\bin\Debug\MyModel.pdb

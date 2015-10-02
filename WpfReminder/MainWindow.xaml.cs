@@ -28,9 +28,17 @@ namespace WpfReminder
         private void SerieKnap_Click(object sender, RoutedEventArgs e)
         {
             WpfReference.Service1Client client = new WpfReference.Service1Client();
-            var x = client.GetAllSeries();
-            var c = x;
-            x = client.GetAllSeries(AlleSerierTB.Text);
+
+            List<KeyValuePair<string, int>> Allseries = client.GetAllSeries().ToList();
+            Listbox.ItemsSource = Allseries;
         }
+
+        private void AirtimeKnap_Click(object sender, RoutedEventArgs e)
+        {
+            WpfReference.Service1Client client = new WpfReference.Service1Client();
+            var remaining = client.Timer(EpisodeNavn.Text, SerieNavn.Text);
+            AirtimeResult.Text = remaining;            
+        }
+
     }
 }

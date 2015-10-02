@@ -31,7 +31,6 @@
   <xs:element name="Timer">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="DinDato" type="xs:dateTime" />
         <xs:element minOccurs="0" name="episode" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="serie" nillable="true" type="xs:string" />
       </xs:sequence>

@@ -9,102 +9,7 @@
 //------------------------------------------------------------------------------
 
 namespace WpfReminder.WpfReference {
-    using System.Runtime.Serialization;
-    using System;
     
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SerieInfo", Namespace="http://schemas.datacontract.org/2004/07/SerieDatabase")]
-    [System.SerializableAttribute()]
-    public partial class SerieInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime AirTimeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string EpisodeNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SeasonField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime AirTime {
-            get {
-                return this.AirTimeField;
-            }
-            set {
-                if ((this.AirTimeField.Equals(value) != true)) {
-                    this.AirTimeField = value;
-                    this.RaisePropertyChanged("AirTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string EpisodeName {
-            get {
-                return this.EpisodeNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.EpisodeNameField, value) != true)) {
-                    this.EpisodeNameField = value;
-                    this.RaisePropertyChanged("EpisodeName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Season {
-            get {
-                return this.SeasonField;
-            }
-            set {
-                if ((this.SeasonField.Equals(value) != true)) {
-                    this.SeasonField = value;
-                    this.RaisePropertyChanged("Season");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WpfReference.IService1")]
@@ -117,16 +22,16 @@ namespace WpfReminder.WpfReference {
         System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, int>> GetAllSeriesAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchSeries", ReplyAction="http://tempuri.org/IService1/SearchSeriesResponse")]
-        WpfReminder.WpfReference.SerieInfo[] SearchSeries(string title);
+        SerieDatabase.SerieInfo[] SearchSeries(string title);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchSeries", ReplyAction="http://tempuri.org/IService1/SearchSeriesResponse")]
-        System.Threading.Tasks.Task<WpfReminder.WpfReference.SerieInfo[]> SearchSeriesAsync(string title);
+        System.Threading.Tasks.Task<SerieDatabase.SerieInfo[]> SearchSeriesAsync(string title);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Timer", ReplyAction="http://tempuri.org/IService1/TimerResponse")]
-        string Timer(System.DateTime DinDato, string episode, string serie);
+        string Timer(string episode, string serie);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Timer", ReplyAction="http://tempuri.org/IService1/TimerResponse")]
-        System.Threading.Tasks.Task<string> TimerAsync(System.DateTime DinDato, string episode, string serie);
+        System.Threading.Tasks.Task<string> TimerAsync(string episode, string serie);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -164,20 +69,20 @@ namespace WpfReminder.WpfReference {
             return base.Channel.GetAllSeriesAsync();
         }
         
-        public WpfReminder.WpfReference.SerieInfo[] SearchSeries(string title) {
+        public SerieDatabase.SerieInfo[] SearchSeries(string title) {
             return base.Channel.SearchSeries(title);
         }
         
-        public System.Threading.Tasks.Task<WpfReminder.WpfReference.SerieInfo[]> SearchSeriesAsync(string title) {
+        public System.Threading.Tasks.Task<SerieDatabase.SerieInfo[]> SearchSeriesAsync(string title) {
             return base.Channel.SearchSeriesAsync(title);
         }
         
-        public string Timer(System.DateTime DinDato, string episode, string serie) {
-            return base.Channel.Timer(DinDato, episode, serie);
+        public string Timer(string episode, string serie) {
+            return base.Channel.Timer(episode, serie);
         }
         
-        public System.Threading.Tasks.Task<string> TimerAsync(System.DateTime DinDato, string episode, string serie) {
-            return base.Channel.TimerAsync(DinDato, episode, serie);
+        public System.Threading.Tasks.Task<string> TimerAsync(string episode, string serie) {
+            return base.Channel.TimerAsync(episode, serie);
         }
     }
 }

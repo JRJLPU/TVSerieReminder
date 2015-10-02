@@ -4,7 +4,7 @@
         Title="MainWindow" Height="397.761" Width="704.104">
     <Grid>
         <Button Name="SerieKnap" Content="Klik" HorizontalAlignment="Left" Height="52" Margin="29,293,0,0" VerticalAlignment="Top" Width="142" Click="SerieKnap_Click"/>
-        <Button Name = "AirtimeKnap" Content="Klik" HorizontalAlignment="Left" Height="52" Margin="420,293,0,0" VerticalAlignment="Top" Width="142"/>
+        <Button Name = "AirtimeKnap" Content="Klik" HorizontalAlignment="Left" Height="52" Margin="420,293,0,0" VerticalAlignment="Top" Width="142" Click="AirtimeKnap_Click" />
         <TextBox Name="SerieNavn" HorizontalAlignment="Left" Height="23" Margin="352,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="EpisodeNavn" HorizontalAlignment="Left" Height="23" Margin="519,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Indtast Serienavn her:" HorizontalAlignment="Left" Margin="352,226,0,0" VerticalAlignment="Top" Width="134"/>
@@ -12,7 +12,8 @@
         <TextBox Name="AirtimeResult" HorizontalAlignment="Left" Height="90" Margin="352,119,0,0" TextWrapping="Wrap" IsReadOnly="True" VerticalAlignment="Top" Width="287"/>
         <TextBlock HorizontalAlignment="Left" Height="104" Margin="352,10,0,0" TextWrapping="Wrap" Text="Se alle serier der er til venstre. Derefter vælges Serienavn og Afsnit, for at se, hvornår det kommer i TV igen" VerticalAlignment="Top" Width="287" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" Height="39" Margin="29,249,0,0" TextWrapping="Wrap" Text="Find alle serier ved at klikke her:" VerticalAlignment="Top" Width="142"/>
-        <TextBox Name="AlleSerierTB" HorizontalAlignment="Left" Height="215" Margin="10,29,0,0" TextWrapping="Wrap" IsReadOnly="True" VerticalAlignment="Top" Width="257"/>
+        <ListBox Name="Listbox" HorizontalAlignment="Left" Height="234" Margin="29,10,0,0" VerticalAlignment="Top" Width="205"/>
+        <TextBlock HorizontalAlignment="Left" Margin="260,119,0,0" TextWrapping="Wrap" Text="Serien kommer:" VerticalAlignment="Top" Width="86"/>
 
     </Grid>
 </Window>

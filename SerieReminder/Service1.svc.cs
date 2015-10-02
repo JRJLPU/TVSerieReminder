@@ -14,17 +14,17 @@ namespace SerieReminder
     {
         TVSDB tvListe = new TVSDB();
 
-        public Dictionary<string, int> GetAllSeries(string test)
+        public Dictionary<string, int> GetAllSeries()
         {
-            return tvListe.GetAllSeries(test);
+            return tvListe.GetAllSeries();
         }
         public List<SerieInfo> SearchSeries(string title)
         {
             return tvListe.SearchSeries(title);
         }
-        public string Timer(DateTime timeToWatch, string episode, string serie)
+        public string Timer(string episode, string serie)
         {
-            return tvListe.Timer(timeToWatch, episode, serie);
+            return tvListe.Timer(episode, serie);
         }
 
     }

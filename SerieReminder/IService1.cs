@@ -14,12 +14,12 @@ namespace SerieReminder
     public interface IService1
     {
         [OperationContract]
-        Dictionary<string, int> GetAllSeries(string test);
+        Dictionary<string, int> GetAllSeries();
 
         [OperationContract]
         List<SerieInfo> SearchSeries(string title);
 
         [OperationContract]
-        string Timer(DateTime DinDato, string episode, string serie);
+        string Timer(string episode, string serie);
     }
 }

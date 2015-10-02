@@ -20,7 +20,7 @@ namespace SerieDatabase
                 _seriesList.Add(new SerieInfo { Name = "Friends", EpisodeName = "The one with Joey", Season = 1, AirTime = DateTime.Parse("06-10-2016 19:30") });
                 _seriesList.Add(new SerieInfo { Name = "Friends", EpisodeName = "The one with Ross", Season = 1, AirTime = DateTime.Parse("07-10-2016 19:30") });
             }
-            public Dictionary<string, int> GetAllSeries(string test)
+            public Dictionary<string, int> GetAllSeries()
             {
                 Dictionary<string, int> seriesName = new Dictionary<string, int>();
                 foreach (SerieInfo info in _seriesList)
@@ -34,11 +34,11 @@ namespace SerieDatabase
                 var series = _seriesList.FindAll(x => x.Name == title);
                 return series;
             }
-            public string Timer(DateTime timeToWatch, string episode, string serie)
+            public string Timer(string episode, string serie)
             {
-                timeToWatch = _seriesList.Where(p => p.Name == serie && p.EpisodeName == episode).FirstOrDefault().AirTime;
+                DateTime timeToWatch = _seriesList.Where(p => p.Name == serie && p.EpisodeName == episode).FirstOrDefault().AirTime;
                 System.TimeSpan remaining = timeToWatch.Subtract(DateTime.Now);
-                return remaining.ToString();
+                return DateTime.Parse(remaining.ToString()).ToString();
             }
         }
 }
