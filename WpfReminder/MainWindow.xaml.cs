@@ -40,13 +40,6 @@ namespace WpfReminder
             var remaining = client.Timer(EpisodeNavn.Text, SerieNavn.Text);
             AirtimeResult.Text = remaining;            
         }
-
-        //private void SøgSerieKnap_Click(object sender, RoutedEventArgs e)
-        //{
-        //    WpfReference.Service1Client client = new WpfReference.Service1Client();
-        //    var series = client.SearchSeries(SøgSerieTB.Text);
-        //    SøgSerieListBox.ItemsSource = series;
-        //}
         private void SøgSerieKnap_Click(object sender, RoutedEventArgs e)
         {
             WpfReference.Service1Client client = new WpfReference.Service1Client();
