@@ -40,5 +40,12 @@ namespace WpfReminder
             AirtimeResult.Text = remaining;            
         }
 
+        private void SøgSerieKnap_Click(object sender, RoutedEventArgs e)
+        {
+            WpfReference.Service1Client client = new WpfReference.Service1Client();
+            var title = client.SearchSeries(SøgSerieTB.Text);
+            SøgSerieListBox.ItemsSource = title;
+        }
+
     }
 }
