@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SerieDatabase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,12 +41,22 @@ namespace WpfReminder
             AirtimeResult.Text = remaining;            
         }
 
+        //private void SøgSerieKnap_Click(object sender, RoutedEventArgs e)
+        //{
+        //    WpfReference.Service1Client client = new WpfReference.Service1Client();
+        //    var series = client.SearchSeries(SøgSerieTB.Text);
+        //    SøgSerieListBox.ItemsSource = series;
+        //}
         private void SøgSerieKnap_Click(object sender, RoutedEventArgs e)
         {
             WpfReference.Service1Client client = new WpfReference.Service1Client();
-            var title = client.SearchSeries(SøgSerieTB.Text);
-            SøgSerieListBox.ItemsSource = title;
+            var series = client.SearchSeries(SøgSerieTB.Text);
+            List<string> episodes = new List<string>();
+            foreach (SerieInfo serie in series)
+            {
+                episodes.Add(serie.EpisodeName);
+            }
+            SøgSerieListBox.ItemsSource = episodes;
         }
-
     }
 }

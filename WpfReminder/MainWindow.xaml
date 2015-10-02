@@ -16,7 +16,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="553,119,0,0" TextWrapping="Wrap" Text="Serien kommer:" VerticalAlignment="Top" Width="86"/>
         <Button Name="SøgSerieKnap" Content="Klik" HorizontalAlignment="Left" Height="52" Margin="325,293,0,0" VerticalAlignment="Top" Width="144" Click="SøgSerieKnap_Click"/>
         <TextBox Name="SøgSerieTB" HorizontalAlignment="Left" Height="23" Margin="325,256,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144"/>
-        <ListBox Name="SøgSerieListBox" HorizontalAlignment="Left" Height="226" Margin="312,10,0,0" VerticalAlignment="Top" Width="182"/>
+        <ListBox Name="SøgSerieListBox" ItemsSource="{Binding EpisodeName}" HorizontalAlignment="Left" Height="199" Margin="312,10,0,0" VerticalAlignment="Top" Width="182"/>
+        <TextBlock HorizontalAlignment="Left" Margin="325,226,0,0" TextWrapping="Wrap" Text="Indtast serie og få afsnit:" VerticalAlignment="Top" Width="144"/>
 
     </Grid>
 </Window>
