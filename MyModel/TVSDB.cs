@@ -37,8 +37,9 @@ namespace SerieDatabase
             public string Timer(string episode, string serie)
             {
                 DateTime timeToWatch = _seriesList.Where(p => p.Name == serie && p.EpisodeName == episode).FirstOrDefault().AirTime;
-                System.TimeSpan remaining = timeToWatch.Subtract(DateTime.Now);
-                return DateTime.Parse(remaining.ToString()).ToString();
+                TimeSpan remaining = timeToWatch.Subtract(DateTime.Now);
+                return string.Format("Days: {0:dd},  Hours:{1:hh}, Minutes:{1:mm} ", remaining, remaining, remaining);
+                //return remaining.ToString("dd':'hh':'mm");
             }
         }
 }
